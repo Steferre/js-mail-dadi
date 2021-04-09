@@ -19,15 +19,16 @@ if (UserMail === "" || UserMail.length < 8) {
     
         if (registeredUser === UserMail) {
             controlKey = true;
-            console.log("Benvenuto");  
+            document.getElementById('saluto').innerHTML= "Benvenuto";  
     
         } 
     }    
 }
 
 if (!controlKey) {
-    console.log("siamo spiacenti ma lei non è ancora registrato!");
+    alert("Siamo spiacenti ma lei non è ancora registrato!");
     var newUserRegistration = prompt("Per favore, Inserisca la propria mail, per effettuare la registrazione.")
+    document.getElementById('saluto').innerHTML= "Registrazione avvenuta con successo!!! BENVENUTO"
 
     realUsersMail.push(newUserRegistration);
     console.log(realUsersMail);
