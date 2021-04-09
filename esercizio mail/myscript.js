@@ -27,8 +27,8 @@ if (UserMail === "" || UserMail.length < 8) {
 
 if (!controlKey) {
     alert("Siamo spiacenti ma lei non è ancora registrato!");
-    var newUserRegistration = prompt("Per favore, Inserisca la propria mail, per effettuare la registrazione.")
-    document.getElementById('saluto').innerHTML= "Registrazione avvenuta con successo!!! BENVENUTO"
+    var newUserRegistration = prompt("Per favore, Inserisca la propria mail, per effettuare la registrazione.");
+    document.getElementById('saluto').innerHTML= "Registrazione avvenuta con successo!!! BENVENUTO";
 
     realUsersMail.push(newUserRegistration);
     console.log(realUsersMail);
